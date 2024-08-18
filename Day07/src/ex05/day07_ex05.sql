@@ -1,0 +1,5 @@
+SELECT person.name 
+FROM person_order
+INNER JOIN person ON person_order.person_id = person.id
+GROUP BY person.name
+ORDER BY 1 asc;
